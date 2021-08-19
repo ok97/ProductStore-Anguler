@@ -1,0 +1,27 @@
+<button routerLink="/admin/product/create" type="button" class="btn btn-secondary">Add Product</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products" >
+        <td>{{product.id}}</td>
+        <td>{{product.title}}</td>
+        <td>{{product.description}}</td>    
+        <td>₹.{{product.price}} </td>
+        <td><img [src]="product.image" width="70"></td>        
+        <td>
+            <button  type="button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary" [routerLink]="['/admin/product/',product.id,'edit']">Edit</button>
+            <button class="btn btn-danger mx-3" (click)="delete(product.id)">Delete</button>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>

@@ -1,0 +1,20 @@
+<form (submit)="submit()">
+    <div class="mb-3 align-items-center">
+      <label for="exampleInputEmail6" class="form-label">Title</label>
+      <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="title">     
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Description</label>
+      <input  type="text" name="description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="description">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input type="text" name="price" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="price">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Image</label>
+        <input type="text" name="image" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="image">
+      </div>      
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  

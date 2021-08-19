@@ -1,0 +1,20 @@
+<form [formGroup]="form" (submit)="submit()">
+    <div class="mb-3 align-items-center">
+      <label for="exampleInputEmail6" class="form-label">Title</label>
+      <input class="col-auto" type="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="title">     
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Description</label>
+      <input type="description" class="form-control" id="exampleInputPassword1" formControlName="description">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input type="price" class="form-control" id="exampleInputPassword1" formControlName="price">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Image</label>
+        <input type="text" name="image" class="form-control" id="exampleInputPassword1" formControlName="image">
+      </div>      
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+  
