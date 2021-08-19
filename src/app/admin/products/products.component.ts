@@ -25,6 +25,8 @@ export class ProductsComponent implements OnInit {
 this.productService.Delete(id).subscribe(
   ()=>{
     this.products=this.products.filter(p=>p.id !== id);
+    alert("Product Delete Successfully")
+    
   }
 )
   }

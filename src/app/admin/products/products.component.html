@@ -1,4 +1,7 @@
-<button routerLink="/admin/product/create" type="button" class="btn btn-secondary">Add Product</button>
+<div class="d-flex justify-content-end mt-3" >
+  <button routerLink="/admin/product/create" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add Product</button>
+</div>
+
 <table class="table">
     <thead>
       <tr>
@@ -15,7 +18,7 @@
         <td>{{product.id}}</td>
         <td>{{product.title}}</td>
         <td>{{product.description}}</td>    
-        <td>₹.{{product.price}} </td>
+        <td>₹{{product.price}} </td>
         <td><img [src]="product.image" width="70"></td>        
         <td>
             <button  type="button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary" [routerLink]="['/admin/product/',product.id,'edit']">Edit</button>

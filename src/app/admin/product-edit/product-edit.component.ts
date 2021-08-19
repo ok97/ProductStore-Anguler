@@ -31,6 +31,7 @@ export class ProductEditComponent implements OnInit {
     this.productService.update(this.id, this.form.getRawValue()).subscribe(
       ()=>{
         this.router.navigate(['/admin/products'])
+        alert("Product Update Successfully")
       }
     )
   }

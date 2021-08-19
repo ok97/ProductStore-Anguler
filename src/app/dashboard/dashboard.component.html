@@ -1,22 +1,63 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/dashboard">
+      <img src="../../assets/online-shop.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      Online Shop
+    </a>
+    <ul class="nav justify-content-end">    
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/products">Admin</a>
+      </li>     
+    </ul>  
+  </div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../assets/Amaone.jpg" class="d-block" class="isize" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../assets/boat.jpg" class="d-block w-50" class="isize"alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../../assets/extra.jpg" class="d-block w-50" class="isize"alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">id</th>
+      
         <th scope="col">Title</th>
         <th scope="col">Description</th>
         <th scope="col">Price</th>
         <th scope="col">Image</th>
-        
+      
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Bottle</td>
-        <td>Water</td>    
-        <td>₹. 200 </td>
-        <td>Yes</td>        
-        
+      <tr *ngFor="let product of products" >
+      
+        <td>{{product.title}}</td>
+        <td>{{product.description}}</td>    
+        <td>{{product.price}} </td>
+        <td><img [src]="product.image" width="70"></td>        
+      
       </tr>
      
     </tbody>

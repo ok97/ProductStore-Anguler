@@ -27,7 +27,9 @@ export class ProductCreateComponent implements OnInit {
       }
       this.productService.addProduct(data).subscribe(
         ()=>{
+          
           this.router.navigate(['/admin/products'])
+          alert("Product Added Successfully")
 
         }
       )
