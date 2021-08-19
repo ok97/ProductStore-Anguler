@@ -20,6 +20,48 @@
       "price": "10999",
       "image": "https://images-eu.ssl-images-amazon.com/images/I/41Gsj-Q-zOS.jpg",
       "id": 5
+    },
+    {
+      "title": "Refrigerator ",
+      "description": "LG 679 L Frost Free Inverter Linear Side-by-Side Refrigerator (GC-B247KQDV, Graphite steel, Multi Air Flow)",
+      "price": "15999",
+      "image": "https://images-eu.ssl-images-amazon.com/images/I/315q4CFDxqL._AC_SX184_.jpg",
+      "id": 6
+    },
+    {
+      "title": "AC",
+      "description": "Voltas 1.4 Ton 5 Star Inverter Adjustable Split AC (Copper, 2021 175V ADJ, White)",
+      "price": "39,090.00",
+      "image": "https://images-eu.ssl-images-amazon.com/images/I/21C5o9jTrhS._AC_SX184_.jpg",
+      "id": 7
+    },
+    {
+      "title": "Men Watch",
+      "description": "Fossil Chronograph Black Men Watch CH2882",
+      "price": "5,445.00",
+      "image": "https://images-eu.ssl-images-amazon.com/images/I/41wuoLxtHrL._AC_SR400,600_.jpg",
+      "id": 8
+    },
+    {
+      "title": "Wireless Bluetooth Party Speaker",
+      "description": "Sony SRS-XP500 Portable Wireless Bluetooth Party Speaker ",
+      "price": "26,990.00",
+      "image": "https://m.media-amazon.com/images/I/81JpekGME6S._AC_UL480_FMwebp_QL65_.jpg",
+      "id": 9
+    },
+    {
+      "title": "Wireless Noise Cancelling Headphones",
+      "description": "Sony WH-1000XM3 Industry Leading Wireless Noise Cancelling Headphones",
+      "price": "17,999",
+      "image": "https://m.media-amazon.com/images/I/61D4Z3yKPAL._AC_UL480_FMwebp_QL65_.jpg",
+      "id": 10
+    },
+    {
+      "title": "Puma Men's Smash L Sneakers",
+      "description": "Puma Men's Smash L Sneakers",
+      "price": "2,299.00",
+      "image": "https://m.media-amazon.com/images/I/7110WrYeduL._AC_UL480_FMwebp_QL65_.jpg",
+      "id": 11
     }
   ],
   "comments": [
